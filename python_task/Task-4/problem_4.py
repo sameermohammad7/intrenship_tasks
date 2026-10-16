@@ -1,5 +1,5 @@
 #Problem Name - Loops
-#HackerRank Link - https://www.hackerrank.com/challenges/python-print/problem
+#HackerRank Link - https://www.hackerrank.com/challenges/python-loops/problem
 
 
 #Task
