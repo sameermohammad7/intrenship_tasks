@@ -1,4 +1,4 @@
-#Problem Name - Loops
+#Problem Name - Print Function
 #HackerRank Link - https://www.hackerrank.com/challenges/python-print/problem
 
 
