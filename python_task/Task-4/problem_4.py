@@ -2,18 +2,16 @@
 #HackerRank Link - https://www.hackerrank.com/challenges/python-print/problem
 
 
-#The included code stub will read an integer, n, from STDIN.
-# Without using any string methods, try to print the following:
-#  123...n
-#   Note that "" represents the consecutive values in between.
-#    Example
-#     n=5
-#      Print the string 12345.
+#Task
+The provided code stub reads an integer, , from STDIN. For all non-negative integers i < n , print i² .
 
+Example
+n = 3
+
+The list of non-negative integers that are less than n = 3 is [1,2,3]. Print the square of each number on a separate line.
 
 if __name__ == '__main__':
     n = int(input())
     
-    for i in range(1, n + 1):
-        print(i, end="")
-
+    for i in range(n):
+        print(i ** 2)
