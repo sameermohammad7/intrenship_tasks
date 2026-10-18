@@ -7,34 +7,41 @@
 #A space explorer's ship crashed on Mars! They send a series of SOS messages to Earth for help.
 #Letters in some of the SOS messages are altered by cosmic radiation during transmission. Given the signal received by Earth as a string, , determine how many letters of the SOS message have been changed by radiation.
 
+using namespace std;
 
-#!/bin/python3
+/*
+ * Complete the 'marsExploration' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts STRING s as parameter.
+ */
 
-import math
-import os
-import random
-import re
-import sys
-
-def marsExploration(s):
-    # Count how many characters differ from the expected 'SOS' pattern
-    count = 0
-    expected = "SOS"
+int marsExploration(string s) {
+    int count = 0;
+    string expected = "SOS";
     
-    for i in range(len(s)):
-        # Check if the current character matches the corresponding position in 'SOS'
-        if s[i] != expected[i % 3]:
-            count += 1
-            
-    return count
+    for (int i = 0; i < s.length(); i++) {
+        // Compare each character with the corresponding character in "SOS"
+        if (s[i] != expected[i % 3]) {
+            count++;
+        }
+    }
+    
+    return count;
+}
 
-if __name__ == '__main__':
-    fout = open(os.environ['OUTPUT_PATH'], 'w')
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
 
-    s = input()
+    string s;
+    getline(cin, s);
 
-    result = marsExploration(s)
+    int result = marsExploration(s);
 
-    fout.write(str(result) + '\n')
+    fout << result << "\n";
 
-    fout.close()
+    fout.close();
+
+    return 0;
+}
