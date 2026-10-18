@@ -3,6 +3,8 @@
 #HackerRank Link -https://www.hackerrank.com/challenges/weighted-uniform-string/problem
 
 
+#!/bin/python3
+
 import math
 import os
 import random
