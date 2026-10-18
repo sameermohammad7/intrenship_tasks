@@ -1,6 +1,6 @@
 #Question20-
 #Problem Name - Validating the Phone Numbe
-#HackerRank Link - https://www.hackerrank.com/challenges/validating-the-phone-number/problem?utm_source=chatgpt.com
+#HackerRank Link - https://www.hackerrank.com/challenges/validating-the-phone-number/problem
 
 
 #Let's dive into the interesting topic of regular expressions! You are given some input, and you are required to check whether they are valid mobile numbers.
