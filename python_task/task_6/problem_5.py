@@ -8,8 +8,12 @@
 def is_leap(year):
     leap = False
     
-    # Write your logic here
-    
+    # A leap year is evenly divisible by 4, 
+    # except when it is evenly divisible by 100, 
+    # unless it is also evenly divisible by 400.
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        leap = True
+        
     return leap
 
 year = int(input())
