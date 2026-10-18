@@ -1,1 +1,32 @@
+#Question19-
+#Problem Name - Company Logo
+#HackerRank Link - https://www.hackerrank.com/challenges/most-commons/problem
 
+#A newly opened multinational brand has decided to base their company logo on the three most common characters in the company name. They are now trying out various combinations of company names and logos based on this condition. Given a string , which is the company name in lowercase letters, your task is to find the top three most common characters in the string.
+#Print the three most common characters along with their occurrence count.
+#Sort in descending order of occurrence count.
+#If the occurrence count is the same, sort the characters in alphabetical order.
+#For example, according to the conditions described above,
+#GOOGLE would have it's logo with the letters G,E,O.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+from collections import Counter
+
+if __name__ == '__main__':
+    s = input()
+    
+    # Count character frequencies
+    frequency = Counter(s)
+    
+    # Sort by frequency descending, then alphabetically ascending
+    sorted_chars = sorted(frequency.items(), key=lambda x: (-x[1], x[0]))
+    
+    # Print the top 3 characters and their counts
+    for char, count in sorted_chars[:3]:
+        print(f"{char} {count}")
